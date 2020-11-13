@@ -1,0 +1,44 @@
+*{background-color: #000; color: var(--main-bg-color);}
+
+:root{
+    --main-bg-color:#F8F8F4;
+}
+
+/* Header */
+header{padding: 40px 35px; display: flex; }
+h1, h2{font-family: 'Jost', sans-serif; font-weight: 500; font-size: 38px;}
+.line{border: 1px solid var(--main-bg-color); width: 87%; height: 0; text-align: center;margin: 0 20px; margin-top: 20px;}
+
+/* Navigation Button*/
+nav{position: absolute; top: 40%; right: -100px;}
+nav .menu-bg{cursor: pointer; background-color: var(--main-bg-color); width: 190px; height: 190px; border-radius: 100%; box-shadow: -7px 5px 15px 3px #000}
+nav .menu-bg .menu-btn{ position: relative; top: 50%; left: 25px; width: 30px; border: #000 2px solid; border-radius: 3px; text-align: left;}
+.menu-btn::before, .menu-btn::after{content: ''; position: absolute; width: 30px; border: #000 2px solid; border-radius: 3px; transition: all .5s ease-in-out;}
+.menu-btn::before{transform: translateY(-15px)}
+.menu-btn::after{transform: translateY(12px)}
+
+/* Wheel Element */
+.wheel{
+    position: absolute; bottom: -1700px; left: -110px; width: 1920px; height: 1920px;
+    border: #EE411B 5px solid; border-radius: 200%; 
+}
+
+.menu ul{font-family: 'Jost', sans-serif;}
+.menu ul li{position: absolute; top: 47%; left: 30%; text-align: center; background: none; }
+.menu ul li:nth-child(1){}
+.menu ul li:nth-child(2){transform: rotate(30deg); top: 70%; left: 75%; opacity: 0.5;}
+.menu ul li:nth-child(3){transform: rotate(40deg); top: 85%; left: 85%; opacity: 0.5;}
+.menu ul li a{font-size: 97px; background: none;}
+.menu ul li:nth-child(1) a{padding: 0 120px;}
+.menu ul li:nth-child(2) a{font-size: 50px; padding-right:40px;}
+.menu ul li:nth-child(3) a{font-size: 50px;}
+.menu ul li .dot{width: 15px; height: 15px; border-radius: 100%;}
+.menu ul li:nth-child(1) .dot{background-color: #EE411B;}
+.menu ul li:nth-child(2) .dot{background-color: #265EDE;}
+.menu ul li:nth-child(3) .dot{background-color: #88DD4A;}
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+/* Menu Animation */
+.visible .menu-list{
+    animation: fadeInLeft 0.3s ease forwards; 
+}
+@keyframes fadeInLeft{
+    from{
+      opacity: 0;
+      transform:translateX(-25%);
+    }
+    to{
+      opacity: 1;
+      transform:translateX(0);
+    }
+}
+
+/* ----------------- */
+
+/* Main Animation */
+#main .main-box .color-bar{ 
+    animation: move 2s;
+}
+#main .main-box .word{
+    animation: txt-move 3s;
+}
+#main .element .el{
+    animation: rotate 5s infinite linear;
+}
+@keyframes move{
+    0%{ width: 0; opacity: 0;}
+    100%{ width: 100; opacity: 1;}
+}
+@keyframes colorInvert{
+    0%{filter: none;}
+    50%{filter: invert(100%);}
+    100%{filter: none;}
+}
+@keyframes txt-move{
+    0%{color: var(--main-bg-color); }
+    30%{ }
+    80%{}
+}
+@keyframes rotate{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+@keyframes change{
+    0%{background-color: var(--G-color);}
+    50%{background-color: var(--B-color);}
+    100%{background-color: var(--R-color);}
+}
+
+/* ----------------- */
+
+/* About Animtion */
+.element .el{
+    animation: rotate 2s infinite linear;
+}
+@keyframes infiniteText{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes circularText{
+    100%{transform: rotate(360deg);}
+}
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}

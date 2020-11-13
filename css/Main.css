@@ -1,0 +1,32 @@
+/* Main Element */
+body{}
+section{width: 100vw; height: 100vh;}
+#main .main-box{padding: 70px 270px;}
+#main .main-box > span{padding: 0 26.5px;}
+#main .main-box > div > span.word{font-size:100px; font-family:'Jost', sans-serif; font-weight:500; line-height: 130px;}
+#main .main-box > div > span.rainbow{font-style: italic; border-bottom: 3px solid #000; cursor: pointer;}
+#main .main-box > div > .rainbow:hover{-webkit-text-stroke: 1px var(--main-bg-color); color:transparent; transition: 0.3s ease-in-out;}
+#main .main-box > .desc{justify-content: center; align-items: center; color: var(--main-bg-color); width: 520px; text-align: center; margin: auto; margin-top: 10px; line-height: 30px; font-weight: 300;}
+#main .main-box > .desc > em{font-weight: 500; color: var(--main-bg-color)}
+    /* color bar */
+#main .main-box > div > span.color-bar{width: 300px; height: 77px; display: block; margin: 30px 0;}
+#main .main-box > div:nth-child(1)> span.color-bar{background-color: #EE411B; display: inline-block; width: 49vw; margin:0; margin-left: 53px; }
+#main .main-box > div:nth-child(2) > span.color-bar{background-color: #265EDE; display: inline-block; margin: 0; margin-right: 53px;}
+#main .main-box > div:nth-child(3) > span.color-bar{background-color: #88DD4A; width: 100%}
+#main .main-box > div:nth-child(4) > span.color-bar{background-color: #F464D3; width: 100%}
+#main .main-box > div:nth-child(5) > span{display: inline-block;}
+#main .main-box > div:nth-child(5) > span.color-bar:nth-child(1){background-color: #FFE72C; margin: 0; margin-right: 53px; width: 330px;}
+#main .main-box > div:nth-child(5) > span.color-bar:nth-child(3){background-color: #8BE0CC; margin: 0; margin-left: 53px; width: 330px;}
+#main .main-box > div > span.color-bar{background-color: #000000};
+
+/* Background Element*/
+#main .element{position: absolute;}
+#main .el{position: relative; border-spacing: 10px; z-index: -2; border-radius: 50%;}
+#main .el:nth-child(1){border: 2px dashed #ccc; width: 450px; height: 450px; top: -1050px; left: -50px;}
+#main .el:nth-child(2){border: 2px dashed #ccc; width: 220px; height: 220px; top: -850px; left: 1300px; border-radius: 0;}
+#main .el:nth-child(3){border: 2px dashed #ccc; width: 150px; height: 150px; top: -900px; left: 200px; }
+
+
+
+
+
