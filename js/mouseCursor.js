@@ -10,7 +10,11 @@ var logo = document.querySelector('.logo a'),
 
     dotEl = document.querySelector('.index-dot'),
 
-    body = document.querySelector('body');
+    // about
+    aboutImg = document.querySelector('.about-img'),
+
+    body = document.querySelector('body'),
+    container = document.querySelector('#container');
 
     
     // Mouse Move
@@ -53,6 +57,7 @@ var logo = document.querySelector('.logo a'),
            logo.style.color = 'var(--main-bg-color)';
            pageName.style.color = 'var(--main-bg-color)';
            line.style.borderColor = 'var(--main-bg-color)';
+           cursorBg.style.border = "1px solid var(--main-bg-color)";
 
            for(var i = 0; i < word.length; i++){
                 word[i].style.color = 'var(--main-bg-color)';
@@ -60,6 +65,11 @@ var logo = document.querySelector('.logo a'),
            }
            wordEl.style.color = 'transparent';
         //    console.log(wordEl);
+        }
+        if(e.currentTarget == aboutImg){
+            cursorBg.style.border = "1px solid var(--main-bg-color)";
+            cursorBg.style.backgroundColor = "transparent";
+            cursorBg.style.zIndex = "999";
         }
         
     }
@@ -76,6 +86,7 @@ var logo = document.querySelector('.logo a'),
         pageName.style.color = "#000";
         body.style.backgroundColor = "var(--main-bg-color)";
         line.style.borderColor = '#000';
+        cursorBg.style.border = "none";
 
         for(var i = 0; i < word.length; i++){
             word[i].style.color = '#000';
@@ -92,7 +103,10 @@ var logo = document.querySelector('.logo a'),
     logo.addEventListener('mouseleave', onMouseLeave);
     pageName.addEventListener('mouseenter', onMouseEnter);
     pageName.addEventListener('mouseleave', onMouseLeave);
-    wordEl.addEventListener('mouseenter', onMouseEnter);
-    wordEl.addEventListener('mouseleave', onMouseLeave);
+    // wordEl.addEventListener('mouseenter', onMouseEnter);
+    // wordEl.addEventListener('mouseleave', onMouseLeave);
+
+    aboutImg.addEventListener('mouseenter', onMouseEnter);
+    aboutImg.addEventListener('mouseleave', onMouseLeave);
     
     

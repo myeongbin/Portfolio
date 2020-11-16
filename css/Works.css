@@ -38,12 +38,11 @@ h4{font-size: 37px; font-weight: 500; margin-bottom: 20px;}
 .site-btn ul li a{color: var(--main-bg-color); font-size: 20px;}
 
 /* INDEX AREA */
-.index-wrap{position: fixed; bottom: 12%; left: 50%; transform: translate(-50%, 0);}
-.index-num-wrap{display: flex; justify-content: center;}
-.index-num li{display: none; font-size: 60px; font-weight: 700; font-family: 'Jost', sans-serif;}
-.index-num li:nth-child(1){display: inline; text-align: center; clear: both;}
+.index-wrap{position:fixed; bottom:10%; left: 50%; transform: translate(-50%, 0);}
+.index-num-wrap{display:flex; justify-content: center;}
+.index-num-wrap .index-num{font-size: 60px; font-weight: 700; font-family: 'Jost', sans-serif;}
 /* Paddle Button */
-.btn-paddle li button{position:absolute; bottom:65%; width:80px; border-top:2px solid #000;}
+.btn-paddle li button{position:absolute; bottom:15%; width:100px; height:50px; border-top:2px solid #000;}
 .btn-paddle .prev{left: -100%; transition: all .6s ease;}
 .btn-paddle .prev::before{content: ''; position: absolute; top: -2px; left: 0; width: 30px; border-top: 2px solid #000; transform-origin: left;transition: all .6s ease;}
 .btn-paddle .prev::after{content: ''; position: absolute; top: -2px; left: 0; width: 30px; border-top: 2px solid #000; transform-origin: left; transition: all .6s ease;}

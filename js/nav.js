@@ -6,10 +6,10 @@ var menuBg = document.querySelector('.menu-bg'),
 
 var hiddenNav = document.querySelector('.full-bg-nav'),
     nav = document.querySelector('.nav'),
-    menuWrapEl = nav.querySelector('.menu-wrap'),
-    menuEls = menuWrapEl.querySelectorAll('.menu-list'),
-    aEls = menuWrapEl.querySelectorAll('div > a'),
-    dotEls = menuWrapEl.querySelectorAll('div > .dot'),
+    // menuWrapEl = nav.querySelector('.menu-wrap'),
+    menuEls = nav.querySelectorAll('.menu-list'),
+    aEls = nav.querySelectorAll('div > a'),
+    dotEls = nav.querySelectorAll('div > .dot'),
     menuSelected = false;
 
     // console.log(aEls);

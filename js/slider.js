@@ -9,7 +9,8 @@ console.log("Script Load");
         var _cuId = 0,
             _exId = 0,
             _max = void 0,
-            _contentW = 0;
+            _contentW = 0,
+            _index0 = "0";
 
         var _isAni = false;
 
@@ -65,6 +66,7 @@ console.log("Script Load");
             paddleSet();
             dotSet();
             change();
+            changeIndexNum();
         }
 
         function onResize(){
@@ -87,7 +89,7 @@ console.log("Script Load");
                 if(_cuId < 0){
                     _cuId = 0;
                 }
-                
+
             }else if($el.hasClass('next')){
                 _cuId++;
 
@@ -98,7 +100,10 @@ console.log("Script Load");
 
             if(_exId !== _cuId){
                 contentSlide();
+                _this.$indexNumEls.html(_index0 + (_cuId + 1));
             }
+
+            console.log(_cuId);
         }
 
         function onClickDotEl(e){
@@ -111,6 +116,7 @@ console.log("Script Load");
                 _cuId = id;
                 // console.log('slide', 'click');
                 contentSlide();
+                _this.$indexNumEls.html( _index0 + (_cuId + 1));
 
                 if(_exId !== circleId){
                     _cuId = circleId;
@@ -134,6 +140,7 @@ console.log("Script Load");
             paddleSet();
             dotSet();
             change();
+            changeIndexNum();
 
             _this.$workArea.stop(true)
                 .animate(
@@ -167,6 +174,13 @@ console.log("Script Load");
             _this.$bgCircle.removeClass('selected');
             _this.$bgCircle.eq(_cuId).addClass('selected');
             // console.log(_cuId);
+        }
+
+        function changeIndexNum(){
+            if(_cuId === 0){
+                _this.$indexNumEls.html('01');
+                // _this.$btnPaddlePrev.css();
+            }
         }
         
         // 전체 호출.
