@@ -103,8 +103,8 @@ var logo = document.querySelector('.logo a'),
     logo.addEventListener('mouseleave', onMouseLeave);
     pageName.addEventListener('mouseenter', onMouseEnter);
     pageName.addEventListener('mouseleave', onMouseLeave);
-    // wordEl.addEventListener('mouseenter', onMouseEnter);
-    // wordEl.addEventListener('mouseleave', onMouseLeave);
+    wordEl.addEventListener('mouseenter', onMouseEnter);
+    wordEl.addEventListener('mouseleave', onMouseLeave);
 
     aboutImg.addEventListener('mouseenter', onMouseEnter);
     aboutImg.addEventListener('mouseleave', onMouseLeave);
