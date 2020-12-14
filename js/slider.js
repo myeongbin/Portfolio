@@ -25,26 +25,26 @@ console.log("Script Load");
 
             _this.$win = $(window);
 
-            _this.$workWrap = $('.work-wrap');
+            _this.$workWrap = $('.content');
             
             // paddle navigation
-            _this.$indexWrap = _this.$workWrap.find('.index-wrap');
-            _this.$indexNumWrap = _this.$indexWrap.find('.index-num-wrap');
+            _this.$indexWrap = _this.$workWrap.find('.ui-area');
+            _this.$indexNumWrap = _this.$indexWrap.find('.index');
             _this.$indexNumEls = _this.$indexNumWrap.find('.index-num');
 
             _this.$paddleNav = _this.$workWrap.find('.paddle-nav');
-            _this.$btnPaddle = _this.$paddleNav.find('button.arrow');
-            _this.$btnPaddlePrev = _this.$paddleNav.find('button.arrow.prev');
-            _this.$btnPaddleNext = _this.$paddleNav.find('button.arrow.next');
+            _this.$btnPaddle = _this.$paddleNav.find('.arrow');
+            _this.$btnPaddlePrev = _this.$paddleNav.find('.arrow.prev');
+            _this.$btnPaddleNext = _this.$paddleNav.find('.arrow.next');
 
             // dot navigation
-            _this.$dotNav = _this.$indexWrap.find('.dot-wrap');
+            _this.$dotNav = _this.$indexWrap.find('.dot');
             _this.$dotEl = _this.$dotNav.find('.index-dot li');
 
             // banner
-            _this.$work = _this.$workWrap.children('.work');
+            _this.$work = _this.$workWrap.children('.content-wrap');
             _this.$workArea = _this.$work.children('.work-area');
-            _this.$contents = _this.$workArea.children('.work-contents');
+            _this.$contents = _this.$workArea.children('.work');
 
             // background circle
             _this.$bgCircle = _this.$work.find('.bg-circle');
@@ -72,7 +72,7 @@ console.log("Script Load");
         function onResize(){
             _contentW = _this.$contents.width();
 
-            _this.$workArea.width(_contentW * _max);
+            _this.$workArea.width(_contentW * _max + 1500);
             _this.$contents.width(_contentW);
 
             contentSlide();
@@ -134,7 +134,7 @@ console.log("Script Load");
 
             _isAni = true;
 
-            var left =  _contentW * _cuId * -1;
+            var left =  (_contentW + 250) * _cuId * -1;
             var duration = 350 + Math.abs(_exId - _cuId) * 150;
 
             paddleSet();

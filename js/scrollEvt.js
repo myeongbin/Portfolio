@@ -23,7 +23,9 @@ function addEvent(){
 }
 
 function onScroll(e){
-    var _scrollTop = window.scrollTop;
+    var _scrollTop = window.pageYOffset;
+
+    // console.log(_scrollTop);
 
     scrollActive();
 
@@ -31,6 +33,13 @@ function onScroll(e){
 }
 
 function scrollActive(){
+
+    var el,
+        start,
+        end;
+
+    start = nextSection.top;
+    
     
     if(_exScrollTop === null) return;
     if(_scrollTop < 0) return;
@@ -38,7 +47,7 @@ function scrollActive(){
     // if(_scrollTop >= sectionWrap.innerHeight()  - window.innerHeight()) return;
 
     if(_scrollTop < _exScrollTop){
-        console.log("Up");
+        // console.log("Up");
     }else{
         console.log("Down");
     }

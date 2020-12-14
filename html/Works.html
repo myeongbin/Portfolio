@@ -8,215 +8,235 @@
     <link href="../css/reset.css" rel="stylesheet"/>
     <link href="../css/common.css" rel="stylesheet"/>
     <link href="../css/Works.css" rel="stylesheet"/>
+    <link href="../css/animation.css" rel="stylesheet"/>
     <script defer src="../js/nav.js" type="text/javascript"></script>
     <script defer src="../js/mouseCursor.js" type="text/javascript"></script>
 </head>
 <body>
-    <header>
-        <!-- Logo & Page -->
-        <div class="page-index">
-            <h1 class="logo"><a href="./Main.html">#M3</a></h1>
-            <div class="line"></div>
-            <h2 class="page-name"><a href="./Main.html">#3WORKS</a></h2>
+    <!-- <div id="load">
+        <div class="bar-wrap">
+            <div class="bar b1"></div>
+            <div class="bar b2"></div>
+            <div class="bar b3"></div>
+            <div class="bar b4"></div>
         </div>
+    </div> -->
+    <div id="container">
+        <header>
+            <!-- Logo & Page -->
+            <div class="page-index">
+                <h1 class="logo"><a href="./Main.html">#M3</a></h1>
+                <div class="line"></div>
+                <h2 class="page-name"><a href="./Works.html">#3WORKS</a></h2>
+            </div>
+    
+            <!-- Menu Button -->
+            <div class="menu-btn-wrap">
+                <div class="menu-bg">
+                    <div class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation -->
+            <div class="full-bg-nav">
+                <nav class="nav">
+                    <div class="menu-list"><a href="./Main.html">#1M3000</a><div class="dot"></div></div>
+                    <div class="menu-list"><a href="./About.html">#2ABOUT</a><div class="dot"></div></div>
+                    <div class="menu-list"><a class="selected" href="./Works.html">#3WORKS</a><div class="dot"></div></div>
+                </nav>
+                <div class="wheel-menu"></div>
+            </div>
+        </header>
+        <!-- SECTION -->
+        <section class="section" id="work-menu">
+            <h3 class="work-title">My <em class="em-word">C</em><em class="em-word">o</em><em class="em-word">l</em><em class="em-word">o</em><em class="em-word">r</em><em class="em-word">f</em><em class="em-word">u</em><em class="em-word">l</em> Works</h3>
+            <div class="content">
+                <div class="content-wrap">
+                    <article class="work-area">
+                        <div class="work">
+                            <div class="img-wrap">
+                                <img class="work-img" src="../images/work-1.png" width="550px"/>
+                            </div>
+                            <div class="txt-area">
+                                <h4>Chernobyl</h4>
+                                <p class="desc">
+                                    TV 드라마 '체르노빌'을 주제로 체르노빌 사건과 드라마를 함께 소개하는 
+                                    웹 사이트를 제작했습니다 javascript 언어를 배운 후 jQuery 라이브러리를 
+                                    활용한 작업물입니다. jQuery 를 통해 가로 스크롤과 스크롤 이벤트 등을 
+                                    구현하였으며 마이크로 인터렉션에 집중하여 웹을 표현하였습니다.
+                                </p>
+                                <ul class="lang">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>jQuery</li>
+                                </ul>
+                                <div class="site-btn">
+                                    <ul>
+                                        <li><a href="https://myeongbin.github.io/Chernobyl/Chernobyl/index.html" target="blank">Go to Site</a></li>
+                                        <!-- <li><a href="#">Behance</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <div class="img-wrap">
+                                <img class="work-img" src="../images/work-2.png" width="550px"/>
+                            </div>
+                            <div class="txt-area">
+                                <h4>ToyStory Series</h4>
+                                <p class="desc">
+                                    영화 '토이스토리' 시리즈를 소개하는 웹 사이트를 제작했습니다
+                                    javascript 언어를 새롭게 접한 후 처음 활용해본 작업물입니다
+                                    html 과 css 를 활용해 레이아웃을 구성하였고 js 를 통해
+                                    아코디언 메뉴, 슬라이드 메뉴 등을 구현하였습니다.
+                                    반짝이는 애니메이션을 통해 토이스토리의 네온 컨셉을 표현하였습니다.
+                                </p>
+                                <ul class="lang">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <div class="site-btn">
+                                    <ul>
+                                        <li><a href="https://myeongbin.github.io/ToyStory/html/main" target="blank">Go to Site</a></li>
+                                        <!-- <li><a href="#">Behance</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <div class="img-wrap">
+                                <img class="work-img" src="../images/work-3.png" width="550px"/>
+                            </div>
+                            <div class="txt-area">
+                                <h4>koob</h4>
+                                <p class="desc">
+                                    청년 문학의 첫걸음, 신인 작가의 출판 가이드가 되어주고 
+                                    독자는 청년 문학이라는 새로운 문학을 접할 수 있는 신개념
+                                    문학 플랫폼 'koob' 입니다. 졸업 작품으로 진행한 작품으로
+                                    원스크롤 페이지로 구성하였고 설명에 맞게 깔끔한 레이아웃으로 구성하였습니다.
+                                </p>
+                                <ul class="lang">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                </ul>
+                                <div class="site-btn">
+                                    <ul>
+                                        <li><a href="http://koob.pe.kr" target="blank">Go to Site</a></li>
+                                        <!-- <li><a href="#">Behance</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- Menu Button -->
-        <div class="menu-btn-wrap">
-            <div class="menu-bg">
-                <div class="menu-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                        <div class="work">
+                            <div class="img-wrap">
+                                <img class="work-img" src="../images/work-4.png" width="550px"/>
+                            </div>
+                            <div class="txt-area">
+                                <h4>We eat</h4>
+                                <p class="desc">
+                                    CDAK 커뮤니케이션 디자인 국제 공모전에 참가하기 위해 팀
+                                    프로젝트로 진행한 식당 청결도 알리미 어플 '위잇' 입니다.
+                                    깔끔함을 보여주기 위해 정돈된 레이아웃을 구성하였고, js로 
+                                    스크롤 이벤트를 활용한 마이크로 인터렉션을 구현하였습니다.
+                                </p>
+                                <ul class="lang">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <div class="site-btn">
+                                    <ul>
+                                        <li><a href="https://myeongbin.github.io/We-eat/html/We-eat#video-area" target="blank">Go to Site</a></li>
+                                        <!-- <li><a href="#">Behance</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <div class="img-wrap">
+                                <img class="work-img" src="../images/work-5.gif" width="550px"/>
+                            </div>
+                            <div class="txt-area">
+                                <h4>Whiplash</h4>
+                                <p class="desc">
+                                    영화 '위플래쉬' 를 간단하게 소개하는 모션 그래픽입니다.
+                                    일러스트레이터를 통해 제작한 벡터 이미지를 에프터 이펙트로
+                                    애니메이션을 구성하여 제작하였습니다. 절제 있는 리듬감에 맞추어
+                                    영상이 진행됩니다.
+                                </p>
+                                <ul class="lang">
+                                    <li>Adobe illustrator</li>
+                                    <li>After Effects</li>
+                                    <li>Premier Pro</li>
+                                </ul>
+                                <div class="site-btn">
+                                    <ul>
+                                        <li><a href="https://www.youtube.com/watch?v=CUNsP9PHZ6Q" target="blank">Youtube</a></li>
+                                        <!-- <li><a href="#">Behance</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="bg-wrap">
+                        <div class="bg-circle selected"></div>
+                        <div class="bg-circle"></div>
+                        <div class="bg-circle"></div>
+                        <div class="bg-circle"></div>
+                        <div class="bg-circle"></div>
+                    </article>
                 </div>
-            </div>
-        </div>
-        <!-- Navigation -->
-        <div class="full-bg-nav">
-            <nav class="nav">
-                <div class="menu-list"><a href="./Main.html">#1M3000</a><div class="dot"></div></div>
-                <div class="menu-list"><a href="./About.html">#2ABOUT</a><div class="dot"></div></div>
-                <div class="menu-list"><a class="selected" href="./Works.html">#3WORKS</a><div class="dot"></div></div>
-            </nav>
-            <div class="wheel-menu"></div>
-        </div>
-    </header>
-    <!-- SECTION -->
-    <section id="work-menu">
-        <h3>My Colorful Works</h3>
-        <div class="work-wrap">
-            <div class="work">
-                <article class="work-area">
-                    <div class="work-contents">
-                        <div class="img-wrap">
-                            <img class="work-img" src="../images/work-1.png" width="550px"/>
-                        </div>
-                        <div class="txt-area">
-                            <h4>ToyStory Series</h4>
-                            <p class="desc">
-                                영화 '토이스토리' 시리즈를 소개하는 웹 사이트를 제작했습니다
-                                javascript 언어를 새롭게 접한 후 처음 활용해본 작업물입니다
-                                html 과 css 를 활용해 레이아웃을 구성하였고 js 를 통해
-                                아코디언 메뉴, 슬라이드 메뉴 등을 구현하였습니다.
-                                반짝이는 애니메이션을 통해 토이스토리의 네온 컨셉을 표현하였습니다.
-                            </p>
-                            <ul class="lang">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                            </ul>
-                            <div class="site-btn">
-                                <ul>
-                                    <li><a href="#">Go to Site</a></li>
-                                    <li><a href="#">Behance</a></li>
+                <article class="ui-area">
+                    <div class="index-wrap">
+                        <nav class="index">
+                            <div class="index-num"></div>
+                            <div class="paddle-nav">
+                                <ul class="btn-paddle">
+                                    <li><div class="arrow prev"></div></li>
+                                    <li><div class="arrow next"></div></li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                    <div class="work-contents">
-                        <div class="img-wrap">
-                            <img class="work-img" src="../images/work-2.png" width="550px"/>
-                        </div>
-                        <div class="txt-area">
-                            <h4>We eat</h4>
-                            <p class="desc">
-                                CDAK 커뮤니케이션 디자인 국제 공모전에 참가하기 위해 팀
-                                프로젝트로 진행한 식당 청결도 알리미 어플 '위잇' 입니다.
-                                깔끔함을 보여주기 위해 정돈된 레이아웃을 구성하였고, js로 
-                                스크롤 이벤트를 활용한 마이크로 인터렉션을 구현하였습니다.
-                            </p>
-                            <ul class="lang">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
+                            <!-- <img src="../images/arrow.svg" alt="arrowSVG" /> -->
+                        </nav>
+                        <nav class="dot">
+                            <ul class="index-dot">
+                                <li class="selected"><a href="#"><span class="hidden">ToyStory Series</span></a></li><li>
+                                <a href="#"><span class="hidden">We eat</span></a></li><li>
+                                <a href="#"><span class="hidden">Pill's Adventure</span></a></li><li>
+                                <a href="#"><span class="hidden">Baby Driver</span></a></li><li>
+                                <a href="#"><span class="hidden">Whiplash</span></a></li>
                             </ul>
-                            <div class="site-btn">
-                                <ul>
-                                    <li><a href="#">Go to Site</a></li>
-                                    <li><a href="#">Behance</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-contents">
-                        <div class="img-wrap">
-                            <img class="work-img" src="../images/work-4.png" width="550px"/>
-                        </div>
-                        <div class="txt-area">
-                            <h4>Queen Yuna</h4>
-                            <p class="desc">
-                                웹의 구조라는 개념과 함께 HTML, CSS를 처음 배우고 나서 작업한 
-                                피겨 선수 '김연아'를 소개하는 웹사이트 입니다. HTML의 태그를 익히고
-                                CSS를 사용한 효과적인 레이아웃 구성을 목적으로 제작했습니다.
-                            </p>
-                            <ul class="lang">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                            </ul>
-                            <div class="site-btn">
-                                <ul>
-                                    <li><a href="#">Go to Site</a></li>
-                                    <li><a href="#">Behance</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-contents">
-                        <div class="img-wrap">
-                            <img class="work-img" src="../images/work-3.png" width="550px"/>
-                        </div>
-                        <div class="txt-area">
-                            <h4>Pill's Adventure</h4>
-                            <p class="desc">
-                                Unity 3D를 통해 제작한 간단한 게임입니다. 플레이어가
-                                제한 시간 안에 방해꾼들을 피해 골인 지점에 도달하는 내용입니다.
-                                C# 언어를 활용하여 방향키와 스페이스 바로 조작할 수 있도록 했습니다.
-                            </p>
-                            <ul class="lang">
-                                <li>Unity 3D</li>
-                                <li>C#</li>
-                            </ul>
-                            <div class="site-btn">
-                                <ul>
-                                    <li><a href="#">Youtube</a></li>
-                                    <li><a href="#">Behance</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-contents">
-                        <div class="img-wrap">
-                            <img class="work-img" src="../images/work-5.gif" width="550px"/>
-                        </div>
-                        <div class="txt-area">
-                            <h4>Whiplash</h4>
-                            <p class="desc">
-                                영화 '위플래쉬' 를 간단하게 소개하는 모션 그래픽입니다.
-                                일러스트레이터를 통해 제작한 벡터 이미지를 에프터 이펙트로
-                                애니메이션을 구성하여 제작하였습니다. 절제 있는 리듬감에 맞추어
-                                영상이 진행됩니다.
-                            </p>
-                            <ul class="lang">
-                                <li>Adobe illustrator</li>
-                                <li>After Effects</li>
-                                <li>Premier Pro</li>
-                            </ul>
-                            <div class="site-btn">
-                                <ul>
-                                    <li><a href="#">Youtube</a></li>
-                                    <li><a href="#">Behance</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        </nav>
                     </div>
                 </article>
-                <article class="bg-wrap">
-                    <div class="bg-circle selected"></div>
-                    <div class="bg-circle"></div>
-                    <div class="bg-circle"></div>
-                    <div class="bg-circle"></div>
-                    <div class="bg-circle"></div>
-                </article>
             </div>
-            <article>
-                <div class="index-wrap">
-                    <nav class="index-num-wrap">
-                        <div class="index-num"></div>
-                        <div class="paddle-nav">
-                            <ul class="btn-paddle">
-                                <li><button class="arrow prev"></button></li>
-                                <li><button class="arrow next"></button></li>
-                            </ul>
-                        </div>
-                        <!-- <img src="../images/arrow.svg" alt="arrowSVG" /> -->
-                    </nav>
-                    <nav class="dot-wrap">
-                        <ul class="index-dot">
-                            <li class="selected"><a href="#"><span class="hidden">ToyStory Series</span></a></li><li>
-                            <a href="#"><span class="hidden">We eat</span></a></li><li>
-                            <a href="#"><span class="hidden">Pill's Adventure</span></a></li><li>
-                            <a href="#"><span class="hidden">Baby Driver</span></a></li><li>
-                            <a href="#"><span class="hidden">Whiplash</span></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </article>
-        </div>
-    </section>
-    <section class="section" id="contact">
-        <div class="contact">
+        </section>
+    
+        <div id="contact" class="contact">
             <ul>
-                <li><a href="mailto:mybin0111@gmail.com">mail</a></li>
-                <li><a href="#">number</a><p class="hidden">010-1234-5678</p></li>
-                <li><a href="https://www.instagram.com/bini0111/" target="blank">sns</a></li>
+                <li><a href="mailto:mybin0111@gmail.com">mail</a><p class="hidden go1">Go!</p></li>
+                <li><a href="#">number</a><p class="hidden num">010-7159-7540</p></li>
+                <li><a href="https://www.instagram.com/bini0111/" target="blank">sns</a><p class="hidden go2">Go!</p></li>
             </ul>
         </div>
-    </section>
+    
+        <!-- Mouse Cursor -->
+        <div id="cursor-bg">&nbsp;</div>
+    </div>
 
-    <!-- Mouse Cursor -->
-    <div id="cursor-bg">&nbsp;</div>
-
-    <!-- jQuery Load -->
+    <!-- Script Load -->
     <script src="../vendor/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="../vendor/gsap/gsap.min.js" type="text/javascript"></script>
+    <script src="../vendor/jquery.easing/jquery.easing.min.js" type="text/javascript"></script>
     <script src="../js/slider.js" type="text/javascript"></script>
+    <script src="../js/loading.js" type="text/javascript"></script>
+    <script src="../js/mouseHoverImg.js" type="text/javascript"></script>
 </body>
 </html>

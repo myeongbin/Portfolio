@@ -1,3 +1,21 @@
+/* Loading Bar Animation */
+#load .bar-wrap .bar{
+    animation:rotateLoad 2s infinite linear;
+}
+#load .bar-wrap .bar.b1{animation-delay:-1.5s}
+#load .bar-wrap .bar.b2{animation-delay:-1s}
+#load .bar-wrap .bar.b3{animation-delay:-0.5s}
+
+@keyframes rotateLoad{
+    0%,100%{transform:translate(0)}
+    25%{transform:translate(160%)}
+    50%{transform:translate(160%, 160%)}
+    75%{transform:translate(0, 160%)}
+}
+
+
+
+
 /* Menu Animation */
 .visible .menu-list{
     animation: fadeInLeft 0.3s ease forwards; 
@@ -17,10 +35,12 @@
 
 /* Main Animation */
 #main .main-box .color-bar{ 
-    animation: move 2s;
+    animation: move 4s;
+    animation-delay: 3s;
 }
 #main .main-box .word{
-    animation: txt-move 3s;
+    animation: txt-move 4s;
+    animation-delay: 3s;
 }
 #main .element .el{
     animation: rotate 5s infinite linear;
@@ -52,21 +72,47 @@
 /* ----------------- */
 
 /* About Animtion */
-.element .el{
-    animation: rotate 2s infinite linear;
+.about-main .title .about-title .txt-ani{
+    animation: letter 3s ease-in-out infinite alternate;
+    animation-delay:1s;
 }
-@keyframes infiniteText{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(-100%);
-    }
+@keyframes letter {
+	0%,30%{ width: 35px; }
+	70%,100%{ width: 30vw; }
 }
-@keyframes circularText{
-    100%{transform: rotate(360deg);}
+
+em.em-word{
+    animation: showTopText 1s ease-in-out infinite alternate;
+    animation-fill-mode: forwards;
+    /* animation-delay:5s; */
 }
-@keyframes rotate{
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
+em.em-word:nth-child(2){
+    animation-delay: 0.5s;
 }
+em.em-word:nth-child(4){
+    animation-delay: 1.2s;
+}
+em.em-word:nth-child(6){
+    animation-delay: 0.5s;
+}
+em.em-word:nth-child(8){
+    animation-delay: 1.2s;
+}
+
+/* work */
+/* #work-menu h3.work-title .em-word{
+    animation: showTopText 1s ease-in-out infinite alternate;
+    animation-fill-mode: forwards;
+}
+#work-menu h3.work-title .em-word:nth-child(2){
+    animation-delay: 0.5s;
+}
+#work-menu h3.work-title .em-word:nth-child(4){
+    animation-delay: 0.5s;
+} */
+
+@keyframes showTopText {
+    0% { transform: translate3d(0, 0, 0); }
+    40%, 60% { transform: translate3d(0, -20%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
